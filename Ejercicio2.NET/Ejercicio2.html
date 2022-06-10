@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ejercicio 2: Reglas</title>
+	<style type="text/css">
+		/* Ejercicio */
+		/* Agregar las reglas de CSS necesarios para que los estilos de la página queden iguales al resultado (Ejercicio2.png). */
+		/* Pista 1: Los bordes se tienen que agregar a cada fila y columna de la tabla para que aparezcan correctos.*/
+		/* Pista 2: Los colores utilizados son los siguientes: teal, red, orange, blue, purple y green. Utilizalos en los diferentes elementos hasta que encuentres que color corresponde a cada regla*/
+
+		#titulo{ 
+			color: teal; 
+		}
+		#texto{ 
+			color: red; 
+		}
+		.destacado{ 
+			color: orange; 
+		}
+		#subtitulo{ 
+			color: blue; 
+		}
+		#resaltado{ 
+			font-style: italic; 
+			color: blue; 
+		}
+		a{ 
+			text-decoration-line: underline;
+			color: rgb(255, 0, 0);
+		}
+		#tabla_titulo{ 
+			color: blue; 
+		}
+		
+		
+		.especial{
+			color: orange; 
+		}
+		#especial_purple{
+			color: purple; 
+		}
+
+		#texto_tabla{
+			color: green; 
+		}
+
+		table,th, td{
+			border: 1px solid black;
+			border-collapse: collapse;
+		}
+
+		th, td{
+			padding: 5px;
+		}
+		
+	
+
+
+	</style>
+</head>
+<body>
+	<h1 id="titulo">Li Europan lingues</h1>
+
+	<p>Li lingues differe solmen in li grammatica, <strong id="texto">li pronunciation e li plu commun vocabules</strong>. Omnicos directe al desirabilite de un nov lingua franca: <span class="destacado">On refusa continuar payar custosi traductores</span>. At solmen va esser necessi far uniform grammatica, pronunciation e plu sommun paroles.</p>
+
+	<h2 id="subtitulo">Por scientie, musica, sport etc</h2>
+
+	<p>Ma quande lingues coalesce, li grammatica del resultant lingue es plu simplic e regulari quam ti del coalescent lingues. <a href="#">Li nov lingua <em id="resaltado">franca va esser</em> plu simplic e regulari quam li existent Europan lingues</a>. <span id="especial_purple">It va esser tam simplic quam Occidental in fact, it va esser Occidental</span>. </p>
+
+	<table>
+	<caption id="tabla_titulo">Titulo de la tabla</caption>
+	<thead>
+	  <tr>
+	    <th scope="col"></th>
+	    <th scope="col" class="especial">Titulo columna 1</th>
+	    <th scope="col" class="especial">Titulo columna 2</th>
+	  </tr>
+	</thead>
+
+	<tfoot>
+	  <tr>
+	    <th scope="col"></th>
+	    <th scope="col" id="texto" >Titulo columna 1</th>
+	    <th scope="col" id="texto" >Titulo columna 2</th>
+	  </tr>
+	</tfoot>
+
+	<tbody>
+	  <tr>
+	    <th scope="row" class="especial">Titulo fila 1</th>
+	    <td id="texto_tabla">Angleso it va semblar</td>
+	    <td id="texto_tabla">Cambridge <em>amico</em></td>
+	  </tr>
+	  <tr>
+	    <th scope="row" id="texto">Titulo fila 2</th>
+	    <td id="texto_tabla">Angleso <strong class="especial">it va semblar</strong></td>
+	    <td id="texto_tabla">Cambridge amico</td>
+	  </tr>
+	</tbody>
+	</table>
+
+</body>
+</html>

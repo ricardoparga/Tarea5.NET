@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ejercicio 3: Reglas</title>
+	<style type="text/css">
+		/* Ejercicio */
+		/* Agregar los elementos de HTML las reglas de CSS necesarios para que la página quede igual al resultado (Ejercicio3_1.png, Ejercicio3_2.png). */
+		/* Nota: La imagen Ejercicio3_2.jpg muestra como se ven los elementos al pasar por arriba el puntero del mouse. Estos estilos se deben replicar en todas las casillas de la tabla.*/
+		table,th, td{
+			border: 1px solid black;
+			border-collapse: collapse;
+		}
+
+		th, td{
+			padding: 5px;
+		}
+		.rojo{
+			color: red;
+		}
+		.azul{
+			color: blue;
+		
+		}
+		.verde{
+			color: green;
+		}
+		.amarillo{
+			color: yellow;
+		}
+		td.rojo:hover{
+			background: red;
+			color: white;
+		}
+		td.verde:hover{
+			background: green;
+			color: white;
+		}
+		td.azul:hover{
+			background: blue;
+			color: white;
+		}
+		td.amarillo:hover{
+			background: yellow;
+			color: black;
+		}
+	</style>
+</head>
+<body>
+	<h1><span class="rojo">Tabla </span><span class="azul">de</span><span class="verde"> colores</span></h1>
+	<table>
+	<tbody>
+	  <tr>
+	    <td class="amarillo" bgcolor="#B2BABB">Amarillo</td>
+	    <td class="verde" bgcolor="#B2BABB">Verde</td>
+	    <td class="azul" bgcolor="#B2BABB">Azul</td>
+	    <td class="rojo" bgcolor="#B2BABB">Rojo</td>
+	  </tr>
+	  <tr>
+	    <td class="azul" bgcolor="#7D7C7C">Azul</td>
+	    <td class="verde" bgcolor="#7D7C7C">Verde</td>
+	    <td class="rojo" bgcolor="#7D7C7C">Rojo</td>
+	    <td class="amarillo" bgcolor="#7D7C7C">Amarillo</td>
+	  </tr>
+	  <tr>
+	    <td class="verde" bgcolor="#B2BABB">Verde</td>
+	    <td class="amarillo" bgcolor="#B2BABB">Amarillo</td>
+	    <td class="rojo" bgcolor="#B2BABB">Rojo</td>
+	    <td class="azul" bgcolor="#B2BABB">Azul</td>
+	  </tr>
+	  <tr>
+	    <td class="rojo" bgcolor="#7D7C7C">Rojo</td>
+	    <td class="azul" bgcolor="#7D7C7C">Azul</td>
+	    <td class="amarillo" bgcolor="#7D7C7C">Amarillo</td>
+	    <td class="verde" bgcolor="#7D7C7C">Verde</td>
+	  </tr>
+	</tbody>
+	</table>
+
+	</div>
+
+</body>
+</html>
